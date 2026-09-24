@@ -1,0 +1,156 @@
+{
+  "goal": "clear the display",
+  "target": "全部清除",
+  "results": {
+    "laya-en": {
+      "1": {
+        "hit": false,
+        "operation": "DONE",
+        "target": null,
+        "op_p": 0.417
+      },
+      "2": {
+        "hit": false,
+        "operation": "DONE",
+        "target": null,
+        "op_p": 0.417
+      },
+      "3": {
+        "hit": false,
+        "operation": "DONE",
+        "target": null,
+        "op_p": 0.417
+      },
+      "5": {
+        "hit": false,
+        "operation": "DONE",
+        "target": null,
+        "op_p": 0.417
+      },
+      "8": {
+        "hit": false,
+        "operation": "DONE",
+        "target": null,
+        "op_p": 0.417
+      },
+      "12": {
+        "hit": false,
+        "operation": "DONE",
+        "target": null,
+        "op_p": 0.417
+      },
+      "16": {
+        "hit": false,
+        "operation": "DONE",
+        "target": null,
+        "op_p": 0.417
+      },
+      "22": {
+        "hit": false,
+        "operation": "DONE",
+        "target": null,
+        "op_p": 0.417
+      }
+    },
+    "laya-multilingual": {
+      "1": {
+        "hit": false,
+        "operation": "WAIT",
+        "target": null,
+        "op_p": 0.792
+      },
+      "2": {
+        "hit": false,
+        "operation": "WAIT",
+        "target": null,
+        "op_p": 0.792
+      },
+      "3": {
+        "hit": false,
+        "operation": "WAIT",
+        "target": null,
+        "op_p": 0.792
+      },
+      "5": {
+        "hit": false,
+        "operation": "WAIT",
+        "target": null,
+        "op_p": 0.792
+      },
+      "8": {
+        "hit": false,
+        "operation": "WAIT",
+        "target": null,
+        "op_p": 0.792
+      },
+      "12": {
+        "hit": false,
+        "operation": "WAIT",
+        "target": null,
+        "op_p": 0.792
+      },
+      "16": {
+        "hit": false,
+        "operation": "WAIT",
+        "target": null,
+        "op_p": 0.792
+      },
+      "22": {
+        "hit": false,
+        "operation": "WAIT",
+        "target": null,
+        "op_p": 0.792
+      }
+    },
+    "laya-typed-decisions": {
+      "1": {
+        "hit": false,
+        "operation": "DONE",
+        "target": null,
+        "op_p": 0.076
+      },
+      "2": {
+        "hit": false,
+        "operation": "DONE",
+        "target": null,
+        "op_p": 0.076
+      },
+      "3": {
+        "hit": false,
+        "operation": "DONE",
+        "target": null,
+        "op_p": 0.076
+      },
+      "5": {
+        "hit": false,
+        "operation": "DONE",
+        "target": null,
+        "op_p": 0.076
+      },
+      "8": {
+        "hit": false,
+        "operation": "DONE",
+        "target": null,
+        "op_p": 0.076
+      },
+      "12": {
+        "hit": false,
+        "operation": "DONE",
+        "target": null,
+        "op_p": 0.076
+      },
+      "16": {
+        "hit": false,
+        "operation": "DONE",
+        "target": null,
+        "op_p": 0.076
+      },
+      "22": {
+        "hit": false,
+        "operation": "DONE",
+        "target": null,
+        "op_p": 0.076
+      }
+    }
+  }
+}

@@ -1,0 +1,428 @@
+{
+  "laya-en": {
+    "v3": {
+      "hits": 0,
+      "total": 8,
+      "rows": [
+        {
+          "id": "calc-en-7",
+          "layout": "v3",
+          "ms": 644,
+          "operation": "DONE",
+          "target": null,
+          "hit": false
+        },
+        {
+          "id": "calc-en-equals",
+          "layout": "v3",
+          "ms": 231,
+          "operation": "DONE",
+          "target": null,
+          "hit": false
+        },
+        {
+          "id": "calc-en-clear",
+          "layout": "v3",
+          "ms": 233,
+          "operation": "DONE",
+          "target": null,
+          "hit": false
+        },
+        {
+          "id": "calc-en-sidebar",
+          "layout": "v3",
+          "ms": 235,
+          "operation": "DONE",
+          "target": null,
+          "hit": false
+        },
+        {
+          "id": "calc-zh-7",
+          "layout": "v3",
+          "ms": 235,
+          "operation": "DONE",
+          "target": null,
+          "hit": false
+        },
+        {
+          "id": "calc-zh-equals",
+          "layout": "v3",
+          "ms": 234,
+          "operation": "DONE",
+          "target": null,
+          "hit": false
+        },
+        {
+          "id": "calc-zh-clear",
+          "layout": "v3",
+          "ms": 234,
+          "operation": "DONE",
+          "target": null,
+          "hit": false
+        },
+        {
+          "id": "calc-zh-sidebar",
+          "layout": "v3",
+          "ms": 234,
+          "operation": "DONE",
+          "target": null,
+          "hit": false
+        }
+      ]
+    },
+    "v1": {
+      "hits": 1,
+      "total": 8,
+      "rows": [
+        {
+          "id": "calc-en-7",
+          "layout": "v1",
+          "ms": 525,
+          "operation": "CLICK",
+          "target": "删除",
+          "hit": false
+        },
+        {
+          "id": "calc-en-equals",
+          "layout": "v1",
+          "ms": 516,
+          "operation": "CLICK",
+          "target": "删除",
+          "hit": false
+        },
+        {
+          "id": "calc-en-clear",
+          "layout": "v1",
+          "ms": 520,
+          "operation": "CLICK",
+          "target": "删除",
+          "hit": false
+        },
+        {
+          "id": "calc-en-sidebar",
+          "layout": "v1",
+          "ms": 517,
+          "operation": "CLICK",
+          "target": "删除",
+          "hit": false
+        },
+        {
+          "id": "calc-zh-7",
+          "layout": "v1",
+          "ms": 519,
+          "operation": "CLICK",
+          "target": "删除",
+          "hit": false
+        },
+        {
+          "id": "calc-zh-equals",
+          "layout": "v1",
+          "ms": 516,
+          "operation": "CLICK",
+          "target": "删除",
+          "hit": false
+        },
+        {
+          "id": "calc-zh-clear",
+          "layout": "v1",
+          "ms": 513,
+          "operation": "CLICK",
+          "target": "全部清除",
+          "hit": true
+        },
+        {
+          "id": "calc-zh-sidebar",
+          "layout": "v1",
+          "ms": 519,
+          "operation": "CLICK",
+          "target": "全部清除",
+          "hit": false
+        }
+      ]
+    }
+  },
+  "laya-multilingual": {
+    "v3": {
+      "hits": 0,
+      "total": 8,
+      "rows": [
+        {
+          "id": "calc-en-7",
+          "layout": "v3",
+          "ms": 1195,
+          "operation": "WAIT",
+          "target": null,
+          "hit": false
+        },
+        {
+          "id": "calc-en-equals",
+          "layout": "v3",
+          "ms": 111,
+          "operation": "WAIT",
+          "target": null,
+          "hit": false
+        },
+        {
+          "id": "calc-en-clear",
+          "layout": "v3",
+          "ms": 110,
+          "operation": "WAIT",
+          "target": null,
+          "hit": false
+        },
+        {
+          "id": "calc-en-sidebar",
+          "layout": "v3",
+          "ms": 111,
+          "operation": "WAIT",
+          "target": null,
+          "hit": false
+        },
+        {
+          "id": "calc-zh-7",
+          "layout": "v3",
+          "ms": 112,
+          "operation": "WAIT",
+          "target": null,
+          "hit": false
+        },
+        {
+          "id": "calc-zh-equals",
+          "layout": "v3",
+          "ms": 112,
+          "operation": "WAIT",
+          "target": null,
+          "hit": false
+        },
+        {
+          "id": "calc-zh-clear",
+          "layout": "v3",
+          "ms": 111,
+          "operation": "WAIT",
+          "target": null,
+          "hit": false
+        },
+        {
+          "id": "calc-zh-sidebar",
+          "layout": "v3",
+          "ms": 111,
+          "operation": "BLOCKED",
+          "target": null,
+          "hit": false
+        }
+      ]
+    },
+    "v1": {
+      "hits": 0,
+      "total": 8,
+      "rows": [
+        {
+          "id": "calc-en-7",
+          "layout": "v1",
+          "ms": 366,
+          "operation": "WAIT",
+          "target": null,
+          "hit": false
+        },
+        {
+          "id": "calc-en-equals",
+          "layout": "v1",
+          "ms": 362,
+          "operation": "WAIT",
+          "target": null,
+          "hit": false
+        },
+        {
+          "id": "calc-en-clear",
+          "layout": "v1",
+          "ms": 363,
+          "operation": "WAIT",
+          "target": null,
+          "hit": false
+        },
+        {
+          "id": "calc-en-sidebar",
+          "layout": "v1",
+          "ms": 365,
+          "operation": "WAIT",
+          "target": null,
+          "hit": false
+        },
+        {
+          "id": "calc-zh-7",
+          "layout": "v1",
+          "ms": 362,
+          "operation": "WAIT",
+          "target": null,
+          "hit": false
+        },
+        {
+          "id": "calc-zh-equals",
+          "layout": "v1",
+          "ms": 363,
+          "operation": "WAIT",
+          "target": null,
+          "hit": false
+        },
+        {
+          "id": "calc-zh-clear",
+          "layout": "v1",
+          "ms": 364,
+          "operation": "WAIT",
+          "target": null,
+          "hit": false
+        },
+        {
+          "id": "calc-zh-sidebar",
+          "layout": "v1",
+          "ms": 361,
+          "operation": "CLICK",
+          "target": "点",
+          "hit": false
+        }
+      ]
+    }
+  },
+  "laya-typed-decisions": {
+    "v3": {
+      "hits": 0,
+      "total": 8,
+      "rows": [
+        {
+          "id": "calc-en-7",
+          "layout": "v3",
+          "ms": 911,
+          "operation": "DONE",
+          "target": null,
+          "hit": false
+        },
+        {
+          "id": "calc-en-equals",
+          "layout": "v3",
+          "ms": 299,
+          "operation": "DONE",
+          "target": null,
+          "hit": false
+        },
+        {
+          "id": "calc-en-clear",
+          "layout": "v3",
+          "ms": 297,
+          "operation": "DONE",
+          "target": null,
+          "hit": false
+        },
+        {
+          "id": "calc-en-sidebar",
+          "layout": "v3",
+          "ms": 296,
+          "operation": "DONE",
+          "target": null,
+          "hit": false
+        },
+        {
+          "id": "calc-zh-7",
+          "layout": "v3",
+          "ms": 298,
+          "operation": "DONE",
+          "target": null,
+          "hit": false
+        },
+        {
+          "id": "calc-zh-equals",
+          "layout": "v3",
+          "ms": 298,
+          "operation": "DONE",
+          "target": null,
+          "hit": false
+        },
+        {
+          "id": "calc-zh-clear",
+          "layout": "v3",
+          "ms": 298,
+          "operation": "DONE",
+          "target": null,
+          "hit": false
+        },
+        {
+          "id": "calc-zh-sidebar",
+          "layout": "v3",
+          "ms": 298,
+          "operation": "DONE",
+          "target": null,
+          "hit": false
+        }
+      ]
+    },
+    "v1": {
+      "hits": 0,
+      "total": 8,
+      "rows": [
+        {
+          "id": "calc-en-7",
+          "layout": "v1",
+          "ms": 1013,
+          "operation": "CLICK",
+          "target": "模式",
+          "hit": false
+        },
+        {
+          "id": "calc-en-equals",
+          "layout": "v1",
+          "ms": 959,
+          "operation": "CLICK",
+          "target": "模式",
+          "hit": false
+        },
+        {
+          "id": "calc-en-clear",
+          "layout": "v1",
+          "ms": 962,
+          "operation": "CLICK",
+          "target": "模式",
+          "hit": false
+        },
+        {
+          "id": "calc-en-sidebar",
+          "layout": "v1",
+          "ms": 962,
+          "operation": "CLICK",
+          "target": "模式",
+          "hit": false
+        },
+        {
+          "id": "calc-zh-7",
+          "layout": "v1",
+          "ms": 958,
+          "operation": "CLICK",
+          "target": "模式",
+          "hit": false
+        },
+        {
+          "id": "calc-zh-equals",
+          "layout": "v1",
+          "ms": 959,
+          "operation": "CLICK",
+          "target": "模式",
+          "hit": false
+        },
+        {
+          "id": "calc-zh-clear",
+          "layout": "v1",
+          "ms": 963,
+          "operation": "CLICK",
+          "target": "模式",
+          "hit": false
+        },
+        {
+          "id": "calc-zh-sidebar",
+          "layout": "v1",
+          "ms": 958,
+          "operation": "CLICK",
+          "target": "模式",
+          "hit": false
+        }
+      ]
+    }
+  }
+}

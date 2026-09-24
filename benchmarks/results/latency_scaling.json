@@ -1,0 +1,38 @@
+{
+  "goal": "clear the display",
+  "repeats": 3,
+  "results": {
+    "5": {
+      "samples_ms": [
+        937,
+        110,
+        110
+      ],
+      "median_ms": 110
+    },
+    "10": {
+      "samples_ms": [
+        111,
+        111,
+        110
+      ],
+      "median_ms": 111
+    },
+    "20": {
+      "samples_ms": [
+        110,
+        109,
+        110
+      ],
+      "median_ms": 110
+    },
+    "40": {
+      "samples_ms": [
+        236,
+        231,
+        231
+      ],
+      "median_ms": 231
+    }
+  }
+}

@@ -1,0 +1,74 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "laya-computer-use"
+version = "0.1.0"
+description = "Local, open-source computer use on macOS: Laya (the open System One model) decides every step over the Accessibility tree. A local alternative to TypeSafe Jev for desktop control."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "Apache-2.0" }
+authors = [{ name = "Chenney Zhuang" }]
+keywords = [
+    "laya", "jev", "typesafe", "system-one", "computer-use", "desktop-agent",
+    "macos", "accessibility", "cua", "local-first", "decision-model", "on-device",
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: MacOS X",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: MacOS :: MacOS X",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Software Development :: User Interfaces",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+    # The decision loop, guards, element-table contract and scoping are REUSED from
+    # the browser project rather than forked — see the README's "What is reused".
+    "laya-browser-agent>=0.2.3",
+]
+
+[project.scripts]
+lcu = "laya_computer_use.cli:main"
+lcu-mcp = "laya_computer_use.mcp_server:main"
+
+[project.optional-dependencies]
+mlx = ["laya-mlx>=0.1.0"]
+torch = ["laya>=0.3.4"]
+dev = ["pytest>=7", "ruff>=0.5"]
+
+[project.urls]
+Homepage = "https://github.com/ChenneyZhuang/laya-computer-use"
+Repository = "https://github.com/ChenneyZhuang/laya-computer-use"
+Issues = "https://github.com/ChenneyZhuang/laya-computer-use/issues"
+
+[tool.setuptools.packages.find]
+include = ["laya_computer_use*"]
+
+[tool.setuptools.package-data]
+laya_computer_use = ["py.typed"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+# The contract suite must run with no checkpoint and no cua-driver installed; live
+# desktop suites are opt-in (LCU_LIVE=1) so an ordinary edit loop cannot stall on
+# permission prompts.
+addopts = "-q"
+
+[tool.ruff]
+line-length = 120
+
+[tool.ruff.lint]
+# Correctness rules only. Style rule-sets are deliberately excluded: their diff noise
+# buries findings like F811 duplicate definitions.
+select = ["F", "E9", "B023", "RUF100"]
+ignore = ["E402"]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/*" = ["F401", "F841"]
+"benchmarks/*" = ["F401", "F841"]

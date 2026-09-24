@@ -1,0 +1,26 @@
+{
+  "laya-en": {
+    "accuracy": 0.0,
+    "hits": "0/12",
+    "calc_en": "0/4",
+    "calc_zh": "0/4",
+    "synthetic_en": "0/4",
+    "load_ms": 809
+  },
+  "laya-multilingual": {
+    "accuracy": 0.0,
+    "hits": "0/12",
+    "calc_en": "0/4",
+    "calc_zh": "0/4",
+    "synthetic_en": "0/4",
+    "load_ms": 1012
+  },
+  "laya-typed-decisions": {
+    "accuracy": 0.0,
+    "hits": "0/12",
+    "calc_en": "0/4",
+    "calc_zh": "0/4",
+    "synthetic_en": "0/4",
+    "load_ms": 628
+  }
+}

@@ -1,0 +1,141 @@
+{
+  "checkpoint": "laya-typed-decisions",
+  "trials": 5,
+  "rows": [
+    {
+      "id": "en-equals",
+      "goal": "press equals",
+      "want": "等于",
+      "picks": [
+        "[DONE]",
+        "[DONE]",
+        "[DONE]",
+        "[DONE]",
+        "[DONE]"
+      ],
+      "hit_rate": "0/5",
+      "slots": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "slot_spread": 0,
+      "targets_chosen": 0
+    },
+    {
+      "id": "en-clear",
+      "goal": "clear the display",
+      "want": "全部清除",
+      "picks": [
+        "[DONE]",
+        "[DONE]",
+        "[DONE]",
+        "[DONE]",
+        "[DONE]"
+      ],
+      "hit_rate": "0/5",
+      "slots": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "slot_spread": 0,
+      "targets_chosen": 0
+    },
+    {
+      "id": "en-7",
+      "goal": "click the number 7",
+      "want": "7",
+      "picks": [
+        "[DONE]",
+        "[DONE]",
+        "[DONE]",
+        "[DONE]",
+        "[DONE]"
+      ],
+      "hit_rate": "0/5",
+      "slots": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "slot_spread": 0,
+      "targets_chosen": 0
+    },
+    {
+      "id": "zh-equals",
+      "goal": "按等于",
+      "want": "等于",
+      "picks": [
+        "[DONE]",
+        "[DONE]",
+        "[DONE]",
+        "[DONE]",
+        "[DONE]"
+      ],
+      "hit_rate": "0/5",
+      "slots": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "slot_spread": 0,
+      "targets_chosen": 0
+    },
+    {
+      "id": "zh-clear",
+      "goal": "清空显示",
+      "want": "全部清除",
+      "picks": [
+        "[DONE]",
+        "[DONE]",
+        "[DONE]",
+        "[DONE]",
+        "[DONE]"
+      ],
+      "hit_rate": "0/5",
+      "slots": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "slot_spread": 0,
+      "targets_chosen": 0
+    },
+    {
+      "id": "zh-7",
+      "goal": "点击数字7",
+      "want": "7",
+      "picks": [
+        "[DONE]",
+        "[DONE]",
+        "[DONE]",
+        "[DONE]",
+        "[DONE]"
+      ],
+      "hit_rate": "0/5",
+      "slots": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "slot_spread": 0,
+      "targets_chosen": 0
+    }
+  ],
+  "label_stable_cases": 0,
+  "slot_fixed_cases": 0,
+  "targets_chosen_trials": 0
+}

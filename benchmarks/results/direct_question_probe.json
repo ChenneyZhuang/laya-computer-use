@@ -1,0 +1,62 @@
+{
+  "laya-en": {
+    "A_dict_instructions": {
+      "operation": "DONE",
+      "op_p": 0.361
+    },
+    "B_plain_instructions": {
+      "operation": "DONE",
+      "op_p": 0.351
+    },
+    "C_goal_only": {
+      "operation": "DONE",
+      "op_p": 0.356
+    },
+    "D_direct_element": {
+      "picked_index": "22",
+      "picked_label": "模式",
+      "wanted": "全部清除",
+      "hit": false
+    }
+  },
+  "laya-multilingual": {
+    "A_dict_instructions": {
+      "operation": "WAIT",
+      "op_p": 0.857
+    },
+    "B_plain_instructions": {
+      "operation": "WAIT",
+      "op_p": 0.368
+    },
+    "C_goal_only": {
+      "operation": "WAIT",
+      "op_p": 0.407
+    },
+    "D_direct_element": {
+      "picked_index": "21",
+      "picked_label": "显示边栏",
+      "wanted": "全部清除",
+      "hit": false
+    }
+  },
+  "laya-typed-decisions": {
+    "A_dict_instructions": {
+      "operation": "DONE",
+      "op_p": 0.105
+    },
+    "B_plain_instructions": {
+      "operation": "DONE",
+      "op_p": 0.053
+    },
+    "C_goal_only": {
+      "operation": "DONE",
+      "op_p": 0.102
+    },
+    "D_direct_element": {
+      "picked_index": "20",
+      "picked_label": "等于",
+      "wanted": "全部清除",
+      "hit": false
+    }
+  }
+}

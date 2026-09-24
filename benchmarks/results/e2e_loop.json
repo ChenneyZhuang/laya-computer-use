@@ -1,0 +1,64 @@
+{
+  "pid": 76903,
+  "window_id": 7389,
+  "goal": "type the specified text into the document body",
+  "marker": "LOOP-1790268790",
+  "model": "convaiinnovations/laya",
+  "subfolder": null,
+  "stopped": "error",
+  "solved": false,
+  "text_landed": true,
+  "bridge_pass": true,
+  "document_before": "test fixture",
+  "document_after": "LOOP-1790268790LOOP-1790268790LOOP-1790268790LOOP-1790268790LOOP-1790268790test fixture",
+  "steps": [
+    {
+      "n": 1,
+      "op": "TYPE_TEXT",
+      "label": "test fixture",
+      "conf": 0.307,
+      "executed": true,
+      "detail": "ok test fixture"
+    },
+    {
+      "n": 2,
+      "op": "TYPE_TEXT",
+      "label": "LOOP-1790268790test fixture",
+      "conf": 0.976,
+      "executed": true,
+      "detail": "ok LOOP-1790268790test fixture"
+    },
+    {
+      "n": 3,
+      "op": "TYPE_TEXT",
+      "label": "LOOP-1790268790LOOP-1790268790test fixtu",
+      "conf": 0.999,
+      "executed": true,
+      "detail": "ok LOOP-1790268790LOOP-1790268790test fixture"
+    },
+    {
+      "n": 4,
+      "op": "TYPE_TEXT",
+      "label": "LOOP-1790268790LOOP-1790268790LOOP-17902",
+      "conf": 0.982,
+      "executed": true,
+      "detail": "ok LOOP-1790268790LOOP-1790268790LOOP-1790268790test fixture"
+    },
+    {
+      "n": 5,
+      "op": "TYPE_TEXT",
+      "label": "LOOP-1790268790LOOP-1790268790LOOP-17902",
+      "conf": 0.482,
+      "executed": true,
+      "detail": "ok LOOP-1790268790LOOP-1790268790LOOP-1790268790LOOP-1790268790test fi"
+    },
+    {
+      "n": 6,
+      "op": "TYPE_TEXT",
+      "label": "LOOP-1790268790LOOP-1790268790LOOP-17902",
+      "conf": 0.415,
+      "executed": false,
+      "detail": "loop guard: no page change"
+    }
+  ]
+}

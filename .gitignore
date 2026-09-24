@@ -1,0 +1,15 @@
+.venv/
+__pycache__/
+*.pyc
+*.egg-info/
+build/
+dist/
+downloads/
+.cache/
+.DS_Store
+*.safetensors
+handoff.md
+CODEX_*.md
+.pytest_cache/
+.ruff_cache/
+private/

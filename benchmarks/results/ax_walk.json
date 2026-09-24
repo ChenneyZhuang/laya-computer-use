@@ -1,0 +1,16 @@
+{
+  "pid": 78340,
+  "window_id": 7401,
+  "title": "计算器",
+  "ax_walk_ms": [
+    136,
+    111,
+    112,
+    113,
+    102
+  ],
+  "ax_walk_median_ms": 112,
+  "actionable_elements": 22,
+  "raw_elements": 169,
+  "menu_chrome_elements": 142
+}

@@ -1,0 +1,20 @@
+{
+  "english": {
+    "checkpoint": "english",
+    "state": "Hi, we were billed twice for March. Please refund the duplicate today or we will cancel our plan.",
+    "ms": 874,
+    "department": "billing",
+    "department_p": 0.926,
+    "urgency": 1.772,
+    "churn_risk": 0.88
+  },
+  "multilingual": {
+    "checkpoint": "multilingual",
+    "state": "我被重复收费了两次，请把多收的钱退给我。",
+    "ms": 1156,
+    "department": "billing",
+    "department_p": 1.0,
+    "urgency": 1.636,
+    "churn_risk": 0.008
+  }
+}
