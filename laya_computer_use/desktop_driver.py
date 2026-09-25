@@ -386,7 +386,7 @@ class DesktopDriver:
         if self._window is not None:
             payload["pid"] = self._window.pid
             payload["window_id"] = self._window.window_id
-        result = self._call("press_key", payload)
+        self._call("press_key", payload)
         # cua-driver 0.28.2 bug (measured): a MODIFIED keystroke reports
         # `confirmed` but does not reach the app — cmd+a left the document
         # untouched while the same keystroke through System Events selected all.
