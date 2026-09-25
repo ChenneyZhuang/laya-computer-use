@@ -1,0 +1,121 @@
+{
+  "table": {
+    "ok": true,
+    "rows": 40,
+    "kinds": [
+      "app",
+      "window"
+    ]
+  },
+  "switch": {
+    "ok": true,
+    "pid": 459,
+    "detail": "switched to 访达 (com.apple.finder) [running]",
+    "verified_active": "访达"
+  },
+  "launch": {
+    "ok": true,
+    "detail": "launched com.apple.Chess",
+    "new_window": {
+      "pid": 98268,
+      "window_id": 8617,
+      "app": "国际象棋"
+    },
+    "cleanup": "quit via osascript"
+  },
+  "focus": {
+    "ok": true,
+    "window_id": 6357,
+    "detail": "focused Hermes \"Hermes\" [window]"
+  },
+  "menu": {
+    "ok": true,
+    "first": "menu 显示 > 科学",
+    "second": "menu 显示 > 基础",
+    "changed": true,
+    "restored": true,
+    "paths": {
+      "scientific": [
+        "显示",
+        "科学"
+      ],
+      "basic": [
+        "显示",
+        "基础"
+      ]
+    }
+  },
+  "click": {
+    "ok": true,
+    "clicked": 4,
+    "of": 4,
+    "signal": "driver page_changed only (display not in AX)"
+  },
+  "type": {
+    "ok": true,
+    "detail": "ok CHAIN-B-6009",
+    "marker": "LCU-E2E-6063",
+    "landed": true
+  },
+  "key": {
+    "ok": true,
+    "detail": "ok key 7",
+    "changed": false
+  },
+  "scroll": {
+    "ok": true,
+    "detail": "ok SCROLL_DOWN",
+    "changed": true,
+    "page_changed": true
+  },
+  "windows": {
+    "ok": true,
+    "window_id": 6357,
+    "detail": "focused Hermes \"Hermes\" [window]",
+    "verified_active": "Hermes"
+  },
+  "chain": {
+    "ok": true,
+    "typed_a": true,
+    "typed_b": true,
+    "replaced": true
+  },
+  "manage": {
+    "ok": true,
+    "original": {
+      "height": 488.0,
+      "width": 586.0,
+      "x": 338.0,
+      "y": 132.0
+    },
+    "moved_to": {
+      "height": 488.0,
+      "width": 586.0,
+      "x": 458.0,
+      "y": 192.0
+    },
+    "moved": true,
+    "restored": true
+  },
+  "context": {
+    "ok": true,
+    "menu_items_before": 261,
+    "menu_items_after": 310
+  },
+  "negative": {
+    "ok": true,
+    "probes": 4,
+    "phantom_successes": []
+  },
+  "third": {
+    "ok": true,
+    "rows": 80,
+    "labelled": 80,
+    "focused": true
+  },
+  "restore": {
+    "ok": true,
+    "pid": 74262
+  },
+  "bridge": true
+}

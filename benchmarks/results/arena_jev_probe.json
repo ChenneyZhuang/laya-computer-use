@@ -1,0 +1,102 @@
+{
+  "rows": [
+    {
+      "id": "calc-en-7",
+      "goal": "click the number 7",
+      "operation": "BLOCKED",
+      "op_p": 0.45,
+      "target": null,
+      "hit": false
+    },
+    {
+      "id": "calc-en-equals",
+      "goal": "press equals",
+      "operation": "BLOCKED",
+      "op_p": 0.68,
+      "target": null,
+      "hit": false
+    },
+    {
+      "id": "calc-en-clear",
+      "goal": "clear the display",
+      "operation": "BLOCKED",
+      "op_p": 0.59,
+      "target": null,
+      "hit": false
+    },
+    {
+      "id": "calc-en-sidebar",
+      "goal": "show the sidebar",
+      "operation": "BLOCKED",
+      "op_p": 0.51,
+      "target": null,
+      "hit": false
+    },
+    {
+      "id": "calc-zh-7",
+      "goal": "点击数字7",
+      "operation": "BLOCKED",
+      "op_p": 0.47,
+      "target": null,
+      "hit": false
+    },
+    {
+      "id": "calc-zh-equals",
+      "goal": "按等于",
+      "operation": "BLOCKED",
+      "op_p": 0.69,
+      "target": null,
+      "hit": false
+    },
+    {
+      "id": "calc-zh-clear",
+      "goal": "清空显示",
+      "operation": "BLOCKED",
+      "op_p": 0.57,
+      "target": null,
+      "hit": false
+    },
+    {
+      "id": "calc-zh-sidebar",
+      "goal": "显示侧边栏",
+      "operation": "BLOCKED",
+      "op_p": 0.55,
+      "target": null,
+      "hit": false
+    },
+    {
+      "id": "syn-settings-displays",
+      "goal": "Open the Displays settings",
+      "operation": "BLOCKED",
+      "op_p": 0.62,
+      "target": null,
+      "hit": false
+    },
+    {
+      "id": "syn-settings-search",
+      "goal": "Find the city in Settings",
+      "operation": "BLOCKED",
+      "op_p": 0.68,
+      "target": null,
+      "hit": false
+    },
+    {
+      "id": "syn-form-name",
+      "goal": "Fill in the full name John Smith",
+      "operation": "BLOCKED",
+      "op_p": 0.5,
+      "target": null,
+      "hit": false
+    },
+    {
+      "id": "syn-form-dob",
+      "goal": "Put 1985-03-14 into the date of birth",
+      "operation": "BLOCKED",
+      "op_p": 0.58,
+      "target": null,
+      "hit": false
+    }
+  ],
+  "hits": 0,
+  "cases": 12
+}

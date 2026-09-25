@@ -4,6 +4,8 @@
     lcu observe 1234 5678               # the AX table the model sees
     lcu decide  1234 5678 "打开显示设置"  # dry run: what would it do?
     lcu run     1234 5678 "打开显示设置"  # full loop, executing steps
+    lcu desktop                         # whole-computer table: apps + windows
+    lcu desktop-run "open Calculator"   # whole-computer loop (switch, launch, menus)
     lcu doctor                          # environment check
 
 The decision layer runs an official Laya checkpoint by default
@@ -11,12 +13,18 @@ The decision layer runs an official Laya checkpoint by default
 
     lcu decide 1234 5678 "显示设置" --model multilingual      # official, 100+ languages
     lcu decide 1234 5678 "显示设置" --model /path/to/checkpoint  # your own, trained for this
+
+`--layout` picks the state format: `v3` (default; elements only in the option
+lists — what browser-trained checkpoints expect) or `v1` (elements also inside the
+state — the Jev-style layout). Measured: the layout decides whether some hosted
+models can answer at all, so it is a first-class flag, not a hidden default.
 """
 
 from __future__ import annotations
 
 import argparse
 import json
+import platform
 import shutil
 import subprocess
 import sys
@@ -162,8 +170,57 @@ def cmd_run(args: argparse.Namespace) -> int:
     return 0 if run.solved else 1
 
 
+def cmd_desktop(args: argparse.Namespace) -> int:
+    """The whole-computer table: apps (running and installed) + on-screen windows."""
+    from .desktop_driver import DesktopDriver
+
+    driver = DesktopDriver(max_apps=args.max_apps, max_windows=args.max_windows,
+                           include_installed=not args.running_only,
+                           menu_items=not args.no_menu)
+    observation = driver.observe()
+    print(f"desktop: {len(observation.get('actions', []))} rows "
+          f"({args.max_apps} apps max, {args.max_windows} windows max)")
+    for item in observation.get("actions", []):
+        meta = item.get("meta") or {}
+        rung = meta.get("desktop_kind", "")
+        flags = [rung] if rung else [item.get("kind", "")]
+        if item.get("disabled"):
+            flags.append("disabled")
+        path = meta.get("menu")
+        if path:
+            flags.append("menu: " + " > ".join(str(p) for p in path))
+        print(f"  [{item.get('index'):>3}] {str(item.get('label'))[:66]:<66} ({', '.join(flags)})")
+    driver.close()
+    return 0
+
+
+def cmd_desktop_run(args: argparse.Namespace) -> int:
+    """Whole-computer loop: the model may switch apps, launch them, use menus."""
+    from .desktop_driver import DesktopDriver
+    from .driver import DesktopLoop
+
+    print(f"model: {describe_model(args.model, args.subfolder)}")
+    driver = DesktopDriver(max_apps=args.max_apps, max_windows=args.max_windows,
+                           include_installed=not args.running_only,
+                           menu_items=not args.no_menu)
+    loop = DesktopLoop(
+        decider=_make_decider(args.model, args.subfolder),
+        max_steps=args.max_steps,
+        text_provider=(lambda _g, _e: args.text) if args.text else None,
+        min_confidence=args.min_confidence,
+    )
+    run = loop.run(driver, args.goal)
+    summary = run.summary()
+    print(json.dumps(summary, ensure_ascii=False, indent=2))
+    for step in run.steps:
+        mark = "->" if step.executed else "  "
+        print(f"  {mark} {step.n:>2}. {step.operation:<10} {step.label[:40]:<40} "
+              f"p={step.confidence:.2f} {step.detail[:60]}")
+    driver.close()
+    return 0 if run.solved else 1
+
+
 def cmd_doctor(args: argparse.Namespace) -> int:
-    import platform
 
     print(f"python      : {sys.version.split()[0]} ({platform.machine()})")
     print(f"cua-driver  : {shutil.which('cua-driver') or 'NOT FOUND — install from trycua/cua'}")
@@ -240,6 +297,27 @@ def main(argv: Optional[List[str]] = None) -> int:
     doctor = sub.add_parser("doctor", help="check the environment")
     _add_model_flags(doctor)
     doctor.set_defaults(func=cmd_doctor)
+
+    desktop = sub.add_parser("desktop", help="print the whole-computer table (apps + windows)")
+    desktop.add_argument("--max-apps", type=int, default=30)
+    desktop.add_argument("--max-windows", type=int, default=12)
+    desktop.add_argument("--running-only", action="store_true",
+                         help="exclude installed-but-closed apps")
+    desktop.add_argument("--no-menu", action="store_true",
+                         help="do not offer the app menu bar as invocable items")
+    desktop.set_defaults(func=cmd_desktop)
+
+    desktop_run = sub.add_parser("desktop-run", help="whole-computer loop: apps, windows, menus")
+    desktop_run.add_argument("goal")
+    desktop_run.add_argument("--max-apps", type=int, default=30)
+    desktop_run.add_argument("--max-windows", type=int, default=12)
+    desktop_run.add_argument("--running-only", action="store_true")
+    desktop_run.add_argument("--no-menu", action="store_true")
+    desktop_run.add_argument("--max-steps", type=int, default=15)
+    desktop_run.add_argument("--min-confidence", type=float, default=0.15)
+    desktop_run.add_argument("--text", default=None)
+    _add_model_flags(desktop_run)
+    desktop_run.set_defaults(func=cmd_desktop_run)
 
     args = parser.parse_args(argv)
     return args.func(args)

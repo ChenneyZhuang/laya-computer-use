@@ -1,0 +1,55 @@
+{
+  "url": "",
+  "title": "Desktop",
+  "text": "",
+  "actions": [
+    {
+      "kind": "click",
+      "node": "lcu:app:101",
+      "label": "Google Chrome (com.google.Chrome) [running, frontmost, 2 windows]",
+      "role": "app"
+    },
+    {
+      "kind": "click",
+      "node": "lcu:app:102",
+      "label": "访达 (com.apple.finder) [running, 1 window]",
+      "role": "app"
+    },
+    {
+      "kind": "click",
+      "node": "lcu:app:103",
+      "label": "Safari (com.apple.Safari) [running]",
+      "role": "app"
+    },
+    {
+      "kind": "click",
+      "node": "lcu:app:104",
+      "label": "Calculator (com.apple.calculator) [not running]",
+      "role": "app"
+    },
+    {
+      "kind": "click",
+      "node": "lcu:app:105",
+      "label": "Notes (com.apple.Notes) [not running]",
+      "role": "app"
+    },
+    {
+      "kind": "click",
+      "node": "lcu:win:101:11",
+      "label": "Google Chrome \"Project Alpha\" [window]",
+      "role": "window"
+    },
+    {
+      "kind": "click",
+      "node": "lcu:win:102:21",
+      "label": "访达 \"Documents\" [window]",
+      "role": "window"
+    },
+    {
+      "kind": "click",
+      "node": "lcu:win:101:12",
+      "label": "Google Chrome \"Inbox\" [window]",
+      "role": "window"
+    }
+  ]
+}

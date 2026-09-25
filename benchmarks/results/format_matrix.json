@@ -1,0 +1,1516 @@
+{
+  "von": {
+    "contender": "von",
+    "summary": {
+      "v3": {
+        "hits": 0,
+        "cases": 12,
+        "accuracy": 0.0
+      },
+      "v1": {
+        "hits": 1,
+        "cases": 12,
+        "accuracy": 0.083
+      },
+      "native": {
+        "hits": 3,
+        "cases": 12,
+        "accuracy": 0.25
+      }
+    },
+    "rows": [
+      {
+        "id": "calc-en-7",
+        "v3": {
+          "op": "SCROLL_UP",
+          "target": null,
+          "hit": false,
+          "ms": 4965
+        },
+        "v1": {
+          "op": "CLICK",
+          "target": "8",
+          "hit": false,
+          "ms": 924
+        },
+        "native": {
+          "op": "CLICK",
+          "target": "7",
+          "hit": true,
+          "ms": 278
+        }
+      },
+      {
+        "id": "calc-en-equals",
+        "v3": {
+          "op": "SCROLL_UP",
+          "target": null,
+          "hit": false,
+          "ms": 150
+        },
+        "v1": {
+          "op": "CLICK",
+          "target": "8",
+          "hit": false,
+          "ms": 958
+        },
+        "native": {
+          "op": "CLICK",
+          "target": "删除",
+          "hit": false,
+          "ms": 279
+        }
+      },
+      {
+        "id": "calc-en-clear",
+        "v3": {
+          "op": "SCROLL_UP",
+          "target": null,
+          "hit": false,
+          "ms": 149
+        },
+        "v1": {
+          "op": "CLICK",
+          "target": "2",
+          "hit": false,
+          "ms": 990
+        },
+        "native": {
+          "op": "CLICK",
+          "target": "删除",
+          "hit": false,
+          "ms": 292
+        }
+      },
+      {
+        "id": "calc-en-sidebar",
+        "v3": {
+          "op": "SCROLL_UP",
+          "target": null,
+          "hit": false,
+          "ms": 144
+        },
+        "v1": {
+          "op": "CLICK",
+          "target": "8",
+          "hit": false,
+          "ms": 954
+        },
+        "native": {
+          "op": "CLICK",
+          "target": "删除",
+          "hit": false,
+          "ms": 261
+        }
+      },
+      {
+        "id": "calc-zh-7",
+        "v3": {
+          "op": "SCROLL_UP",
+          "target": null,
+          "hit": false,
+          "ms": 150
+        },
+        "v1": {
+          "op": "CLICK",
+          "target": "8",
+          "hit": false,
+          "ms": 974
+        },
+        "native": {
+          "op": "CLICK",
+          "target": "删除",
+          "hit": false,
+          "ms": 308
+        }
+      },
+      {
+        "id": "calc-zh-equals",
+        "v3": {
+          "op": "SCROLL_UP",
+          "target": null,
+          "hit": false,
+          "ms": 150
+        },
+        "v1": {
+          "op": "CLICK",
+          "target": "8",
+          "hit": false,
+          "ms": 971
+        },
+        "native": {
+          "op": "CLICK",
+          "target": "删除",
+          "hit": false,
+          "ms": 288
+        }
+      },
+      {
+        "id": "calc-zh-clear",
+        "v3": {
+          "op": "SCROLL_UP",
+          "target": null,
+          "hit": false,
+          "ms": 143
+        },
+        "v1": {
+          "op": "CLICK",
+          "target": "8",
+          "hit": false,
+          "ms": 956
+        },
+        "native": {
+          "op": "CLICK",
+          "target": "删除",
+          "hit": false,
+          "ms": 290
+        }
+      },
+      {
+        "id": "calc-zh-sidebar",
+        "v3": {
+          "op": "SCROLL_UP",
+          "target": null,
+          "hit": false,
+          "ms": 166
+        },
+        "v1": {
+          "op": "CLICK",
+          "target": "8",
+          "hit": false,
+          "ms": 1001
+        },
+        "native": {
+          "op": "CLICK",
+          "target": "显示边栏",
+          "hit": true,
+          "ms": 302
+        }
+      },
+      {
+        "id": "syn-settings-displays",
+        "v3": {
+          "op": "SCROLL_UP",
+          "target": null,
+          "hit": false,
+          "ms": 169
+        },
+        "v1": {
+          "op": "CLICK",
+          "target": "Displays",
+          "hit": true,
+          "ms": 579
+        },
+        "native": {
+          "op": "CLICK",
+          "target": "Displays",
+          "hit": true,
+          "ms": 163
+        }
+      },
+      {
+        "id": "syn-settings-search",
+        "v3": {
+          "op": "SCROLL_UP",
+          "target": null,
+          "hit": false,
+          "ms": 160
+        },
+        "v1": {
+          "op": "CLICK",
+          "target": "Control Center",
+          "hit": false,
+          "ms": 584
+        },
+        "native": {
+          "op": "CLICK",
+          "target": "Control Center",
+          "hit": false,
+          "ms": 159
+        }
+      },
+      {
+        "id": "syn-form-name",
+        "v3": {
+          "op": "SCROLL_UP",
+          "target": null,
+          "hit": false,
+          "ms": 175
+        },
+        "v1": {
+          "op": "CLICK",
+          "target": "Next",
+          "hit": false,
+          "ms": 499
+        },
+        "native": {
+          "op": "CLICK",
+          "target": "Next",
+          "hit": false,
+          "ms": 131
+        }
+      },
+      {
+        "id": "syn-form-dob",
+        "v3": {
+          "op": "SCROLL_UP",
+          "target": null,
+          "hit": false,
+          "ms": 167
+        },
+        "v1": {
+          "op": "CLICK",
+          "target": "Next",
+          "hit": false,
+          "ms": 492
+        },
+        "native": {
+          "op": "CLICK",
+          "target": "Next",
+          "hit": false,
+          "ms": 138
+        }
+      }
+    ]
+  },
+  "jev": {
+    "contender": "jev",
+    "summary": {
+      "v3": {
+        "hits": 0,
+        "cases": 12,
+        "accuracy": 0.0
+      },
+      "v1": {
+        "hits": 12,
+        "cases": 12,
+        "accuracy": 1.0
+      },
+      "native": {
+        "hits": 12,
+        "cases": 12,
+        "accuracy": 1.0
+      }
+    },
+    "rows": [
+      {
+        "id": "calc-en-7",
+        "v3": {
+          "op": "BLOCKED",
+          "p": 0.43,
+          "target": null,
+          "hit": false,
+          "ms": 1322
+        },
+        "v1": {
+          "op": "CLICK",
+          "p": 0.99,
+          "target": "7",
+          "hit": true,
+          "ms": 1935
+        },
+        "native": {
+          "op": "CLICK",
+          "p": 0.99,
+          "target": "7",
+          "hit": true,
+          "ms": 1289
+        }
+      },
+      {
+        "id": "calc-en-equals",
+        "v3": {
+          "op": "BLOCKED",
+          "p": 0.66,
+          "target": null,
+          "hit": false,
+          "ms": 1381
+        },
+        "v1": {
+          "op": "CLICK",
+          "p": 0.96,
+          "target": "等于",
+          "hit": true,
+          "ms": 1519
+        },
+        "native": {
+          "op": "CLICK",
+          "p": 0.97,
+          "target": "等于",
+          "hit": true,
+          "ms": 2349
+        }
+      },
+      {
+        "id": "calc-en-clear",
+        "v3": {
+          "op": "BLOCKED",
+          "p": 0.56,
+          "target": null,
+          "hit": false,
+          "ms": 1424
+        },
+        "v1": {
+          "op": "CLICK",
+          "p": 0.99,
+          "target": "全部清除",
+          "hit": true,
+          "ms": 1259
+        },
+        "native": {
+          "op": "CLICK",
+          "p": 0.99,
+          "target": "全部清除",
+          "hit": true,
+          "ms": 1359
+        }
+      },
+      {
+        "id": "calc-en-sidebar",
+        "v3": {
+          "op": "BLOCKED",
+          "p": 0.52,
+          "target": null,
+          "hit": false,
+          "ms": 1295
+        },
+        "v1": {
+          "op": "CLICK",
+          "p": 0.99,
+          "target": "显示边栏",
+          "hit": true,
+          "ms": 1489
+        },
+        "native": {
+          "op": "CLICK",
+          "p": 1.0,
+          "target": "显示边栏",
+          "hit": true,
+          "ms": 1283
+        }
+      },
+      {
+        "id": "calc-zh-7",
+        "v3": {
+          "op": "BLOCKED",
+          "p": 0.45,
+          "target": null,
+          "hit": false,
+          "ms": 1957
+        },
+        "v1": {
+          "op": "CLICK",
+          "p": 0.99,
+          "target": "7",
+          "hit": true,
+          "ms": 1417
+        },
+        "native": {
+          "op": "CLICK",
+          "p": 0.93,
+          "target": "7",
+          "hit": true,
+          "ms": 1193
+        }
+      },
+      {
+        "id": "calc-zh-equals",
+        "v3": {
+          "op": "BLOCKED",
+          "p": 0.71,
+          "target": null,
+          "hit": false,
+          "ms": 1252
+        },
+        "v1": {
+          "op": "CLICK",
+          "p": 0.93,
+          "target": "等于",
+          "hit": true,
+          "ms": 1477
+        },
+        "native": {
+          "op": "CLICK",
+          "p": 0.94,
+          "target": "等于",
+          "hit": true,
+          "ms": 1261
+        }
+      },
+      {
+        "id": "calc-zh-clear",
+        "v3": {
+          "op": "BLOCKED",
+          "p": 0.63,
+          "target": null,
+          "hit": false,
+          "ms": 1338
+        },
+        "v1": {
+          "op": "CLICK",
+          "p": 0.98,
+          "target": "全部清除",
+          "hit": true,
+          "ms": 1386
+        },
+        "native": {
+          "op": "CLICK",
+          "p": 0.98,
+          "target": "全部清除",
+          "hit": true,
+          "ms": 1323
+        }
+      },
+      {
+        "id": "calc-zh-sidebar",
+        "v3": {
+          "op": "BLOCKED",
+          "p": 0.57,
+          "target": null,
+          "hit": false,
+          "ms": 1261
+        },
+        "v1": {
+          "op": "CLICK",
+          "p": 1.0,
+          "target": "显示边栏",
+          "hit": true,
+          "ms": 1648
+        },
+        "native": {
+          "op": "CLICK",
+          "p": 1.0,
+          "target": "显示边栏",
+          "hit": true,
+          "ms": 1271
+        }
+      },
+      {
+        "id": "syn-settings-displays",
+        "v3": {
+          "op": "BLOCKED",
+          "p": 0.62,
+          "target": null,
+          "hit": false,
+          "ms": 650
+        },
+        "v1": {
+          "op": "CLICK",
+          "p": 1.0,
+          "target": "Displays",
+          "hit": true,
+          "ms": 880
+        },
+        "native": {
+          "op": "CLICK",
+          "p": 1.0,
+          "target": "Displays",
+          "hit": true,
+          "ms": 665
+        }
+      },
+      {
+        "id": "syn-settings-search",
+        "v3": {
+          "op": "BLOCKED",
+          "p": 0.63,
+          "target": null,
+          "hit": false,
+          "ms": 759
+        },
+        "v1": {
+          "op": "TYPE_TEXT",
+          "p": 0.9,
+          "target": "Search",
+          "hit": true,
+          "ms": 633
+        },
+        "native": {
+          "op": "TYPE_TEXT",
+          "p": 0.67,
+          "target": "Search",
+          "hit": true,
+          "ms": 589
+        }
+      },
+      {
+        "id": "syn-form-name",
+        "v3": {
+          "op": "BLOCKED",
+          "p": 0.53,
+          "target": null,
+          "hit": false,
+          "ms": 611
+        },
+        "v1": {
+          "op": "TYPE_TEXT",
+          "p": 0.99,
+          "target": "Full name",
+          "hit": true,
+          "ms": 912
+        },
+        "native": {
+          "op": "TYPE_TEXT",
+          "p": 0.77,
+          "target": "Full name",
+          "hit": true,
+          "ms": 603
+        }
+      },
+      {
+        "id": "syn-form-dob",
+        "v3": {
+          "op": "BLOCKED",
+          "p": 0.58,
+          "target": null,
+          "hit": false,
+          "ms": 694
+        },
+        "v1": {
+          "op": "TYPE_TEXT",
+          "p": 0.98,
+          "target": "Date of birth",
+          "hit": true,
+          "ms": 669
+        },
+        "native": {
+          "op": "TYPE_TEXT",
+          "p": 0.41,
+          "target": "Date of birth",
+          "hit": true,
+          "ms": 609
+        }
+      }
+    ]
+  },
+  "laya-en": {
+    "contender": "laya-en",
+    "summary": {
+      "v3": {
+        "hits": 0,
+        "cases": 12,
+        "accuracy": 0.0
+      },
+      "v1": {
+        "hits": 1,
+        "cases": 12,
+        "accuracy": 0.083
+      },
+      "native": {
+        "hits": 4,
+        "cases": 12,
+        "accuracy": 0.333
+      }
+    },
+    "rows": [
+      {
+        "id": "calc-en-7",
+        "v3": {
+          "op": "DONE",
+          "p": 0.361,
+          "target": null,
+          "hit": false,
+          "ms": 1119
+        },
+        "v1": {
+          "op": "CLICK",
+          "p": 0.051,
+          "target": "删除",
+          "hit": false,
+          "ms": 605
+        },
+        "native": {
+          "op": "CLICK",
+          "p": 0.891,
+          "target": "更改正负号",
+          "hit": false,
+          "ms": 413
+        }
+      },
+      {
+        "id": "calc-en-equals",
+        "v3": {
+          "op": "DONE",
+          "p": 0.508,
+          "target": null,
+          "hit": false,
+          "ms": 277
+        },
+        "v1": {
+          "op": "CLICK",
+          "p": 0.06,
+          "target": "删除",
+          "hit": false,
+          "ms": 613
+        },
+        "native": {
+          "op": "CLICK",
+          "p": 0.619,
+          "target": "更改正负号",
+          "hit": false,
+          "ms": 394
+        }
+      },
+      {
+        "id": "calc-en-clear",
+        "v3": {
+          "op": "DONE",
+          "p": 0.557,
+          "target": null,
+          "hit": false,
+          "ms": 274
+        },
+        "v1": {
+          "op": "CLICK",
+          "p": 0.042,
+          "target": "删除",
+          "hit": false,
+          "ms": 610
+        },
+        "native": {
+          "op": "CLICK",
+          "p": 0.734,
+          "target": "删除",
+          "hit": false,
+          "ms": 391
+        }
+      },
+      {
+        "id": "calc-en-sidebar",
+        "v3": {
+          "op": "DONE",
+          "p": 0.367,
+          "target": null,
+          "hit": false,
+          "ms": 275
+        },
+        "v1": {
+          "op": "CLICK",
+          "p": 0.052,
+          "target": "删除",
+          "hit": false,
+          "ms": 611
+        },
+        "native": {
+          "op": "CLICK",
+          "p": 0.846,
+          "target": "显示边栏",
+          "hit": true,
+          "ms": 385
+        }
+      },
+      {
+        "id": "calc-zh-7",
+        "v3": {
+          "op": "DONE",
+          "p": 0.554,
+          "target": null,
+          "hit": false,
+          "ms": 274
+        },
+        "v1": {
+          "op": "CLICK",
+          "p": 0.042,
+          "target": "删除",
+          "hit": false,
+          "ms": 607
+        },
+        "native": {
+          "op": "CLICK",
+          "p": 0.938,
+          "target": "点",
+          "hit": false,
+          "ms": 437
+        }
+      },
+      {
+        "id": "calc-zh-equals",
+        "v3": {
+          "op": "DONE",
+          "p": 0.576,
+          "target": null,
+          "hit": false,
+          "ms": 273
+        },
+        "v1": {
+          "op": "CLICK",
+          "p": 0.04,
+          "target": "删除",
+          "hit": false,
+          "ms": 610
+        },
+        "native": {
+          "op": "CLICK",
+          "p": 0.568,
+          "target": "模式",
+          "hit": false,
+          "ms": 416
+        }
+      },
+      {
+        "id": "calc-zh-clear",
+        "v3": {
+          "op": "DONE",
+          "p": 0.587,
+          "target": null,
+          "hit": false,
+          "ms": 279
+        },
+        "v1": {
+          "op": "CLICK",
+          "p": 0.04,
+          "target": "全部清除",
+          "hit": true,
+          "ms": 603
+        },
+        "native": {
+          "op": "CLICK",
+          "p": 0.596,
+          "target": "全部清除",
+          "hit": true,
+          "ms": 414
+        }
+      },
+      {
+        "id": "calc-zh-sidebar",
+        "v3": {
+          "op": "DONE",
+          "p": 0.642,
+          "target": null,
+          "hit": false,
+          "ms": 272
+        },
+        "v1": {
+          "op": "CLICK",
+          "p": 0.102,
+          "target": "全部清除",
+          "hit": false,
+          "ms": 605
+        },
+        "native": {
+          "op": "CLICK",
+          "p": 0.525,
+          "target": "模式",
+          "hit": false,
+          "ms": 405
+        }
+      },
+      {
+        "id": "syn-settings-displays",
+        "v3": {
+          "op": "DONE",
+          "p": 0.268,
+          "target": null,
+          "hit": false,
+          "ms": 217
+        },
+        "v1": {
+          "op": "CLICK",
+          "p": 0.128,
+          "target": "Control Center",
+          "hit": false,
+          "ms": 415
+        },
+        "native": {
+          "op": "CLICK",
+          "p": 0.566,
+          "target": "Displays",
+          "hit": true,
+          "ms": 170
+        }
+      },
+      {
+        "id": "syn-settings-search",
+        "v3": {
+          "op": "DONE",
+          "p": 0.357,
+          "target": null,
+          "hit": false,
+          "ms": 198
+        },
+        "v1": {
+          "op": "CLICK",
+          "p": 0.132,
+          "target": "Control Center",
+          "hit": false,
+          "ms": 393
+        },
+        "native": {
+          "op": "CLICK",
+          "p": 0.467,
+          "target": "Control Center",
+          "hit": false,
+          "ms": 162
+        }
+      },
+      {
+        "id": "syn-form-name",
+        "v3": {
+          "op": "BLOCKED",
+          "p": 0.297,
+          "target": null,
+          "hit": false,
+          "ms": 203
+        },
+        "v1": {
+          "op": "DONE",
+          "p": 0.223,
+          "target": null,
+          "hit": false,
+          "ms": 456
+        },
+        "native": {
+          "op": "TYPE_TEXT",
+          "p": 0.197,
+          "target": "Full name",
+          "hit": true,
+          "ms": 127
+        }
+      },
+      {
+        "id": "syn-form-dob",
+        "v3": {
+          "op": "DONE",
+          "p": 0.307,
+          "target": null,
+          "hit": false,
+          "ms": 201
+        },
+        "v1": {
+          "op": "DONE",
+          "p": 0.207,
+          "target": null,
+          "hit": false,
+          "ms": 335
+        },
+        "native": {
+          "op": "TYPE_TEXT",
+          "p": 0.171,
+          "target": "Full name",
+          "hit": false,
+          "ms": 149
+        }
+      }
+    ]
+  },
+  "laya-multilingual": {
+    "contender": "laya-multilingual",
+    "summary": {
+      "v3": {
+        "hits": 0,
+        "cases": 12,
+        "accuracy": 0.0
+      },
+      "v1": {
+        "hits": 0,
+        "cases": 12,
+        "accuracy": 0.0
+      },
+      "native": {
+        "hits": 4,
+        "cases": 12,
+        "accuracy": 0.333
+      }
+    },
+    "rows": [
+      {
+        "id": "calc-en-7",
+        "v3": {
+          "op": "WAIT",
+          "p": 0.857,
+          "target": null,
+          "hit": false,
+          "ms": 1207
+        },
+        "v1": {
+          "op": "WAIT",
+          "p": 0.515,
+          "target": null,
+          "hit": false,
+          "ms": 428
+        },
+        "native": {
+          "op": "CLICK",
+          "p": 0.998,
+          "target": "模式",
+          "hit": false,
+          "ms": 160
+        }
+      },
+      {
+        "id": "calc-en-equals",
+        "v3": {
+          "op": "WAIT",
+          "p": 0.87,
+          "target": null,
+          "hit": false,
+          "ms": 132
+        },
+        "v1": {
+          "op": "WAIT",
+          "p": 0.505,
+          "target": null,
+          "hit": false,
+          "ms": 425
+        },
+        "native": {
+          "op": "CLICK",
+          "p": 0.881,
+          "target": "模式",
+          "hit": false,
+          "ms": 149
+        }
+      },
+      {
+        "id": "calc-en-clear",
+        "v3": {
+          "op": "WAIT",
+          "p": 0.872,
+          "target": null,
+          "hit": false,
+          "ms": 132
+        },
+        "v1": {
+          "op": "WAIT",
+          "p": 0.483,
+          "target": null,
+          "hit": false,
+          "ms": 429
+        },
+        "native": {
+          "op": "CLICK",
+          "p": 0.547,
+          "target": "全部清除",
+          "hit": true,
+          "ms": 152
+        }
+      },
+      {
+        "id": "calc-en-sidebar",
+        "v3": {
+          "op": "WAIT",
+          "p": 0.874,
+          "target": null,
+          "hit": false,
+          "ms": 130
+        },
+        "v1": {
+          "op": "WAIT",
+          "p": 0.535,
+          "target": null,
+          "hit": false,
+          "ms": 431
+        },
+        "native": {
+          "op": "CLICK",
+          "p": 0.674,
+          "target": "模式",
+          "hit": false,
+          "ms": 155
+        }
+      },
+      {
+        "id": "calc-zh-7",
+        "v3": {
+          "op": "WAIT",
+          "p": 0.466,
+          "target": null,
+          "hit": false,
+          "ms": 133
+        },
+        "v1": {
+          "op": "WAIT",
+          "p": 0.295,
+          "target": null,
+          "hit": false,
+          "ms": 434
+        },
+        "native": {
+          "op": "CLICK",
+          "p": 0.86,
+          "target": "模式",
+          "hit": false,
+          "ms": 148
+        }
+      },
+      {
+        "id": "calc-zh-equals",
+        "v3": {
+          "op": "WAIT",
+          "p": 0.605,
+          "target": null,
+          "hit": false,
+          "ms": 133
+        },
+        "v1": {
+          "op": "WAIT",
+          "p": 0.38,
+          "target": null,
+          "hit": false,
+          "ms": 439
+        },
+        "native": {
+          "op": "CLICK",
+          "p": 0.828,
+          "target": "模式",
+          "hit": false,
+          "ms": 151
+        }
+      },
+      {
+        "id": "calc-zh-clear",
+        "v3": {
+          "op": "WAIT",
+          "p": 0.473,
+          "target": null,
+          "hit": false,
+          "ms": 136
+        },
+        "v1": {
+          "op": "WAIT",
+          "p": 0.327,
+          "target": null,
+          "hit": false,
+          "ms": 442
+        },
+        "native": {
+          "op": "CLICK",
+          "p": 0.874,
+          "target": "全部清除",
+          "hit": true,
+          "ms": 152
+        }
+      },
+      {
+        "id": "calc-zh-sidebar",
+        "v3": {
+          "op": "BLOCKED",
+          "p": 0.388,
+          "target": null,
+          "hit": false,
+          "ms": 132
+        },
+        "v1": {
+          "op": "CLICK",
+          "p": 0.188,
+          "target": "点",
+          "hit": false,
+          "ms": 444
+        },
+        "native": {
+          "op": "CLICK",
+          "p": 0.781,
+          "target": "显示边栏",
+          "hit": true,
+          "ms": 155
+        }
+      },
+      {
+        "id": "syn-settings-displays",
+        "v3": {
+          "op": "WAIT",
+          "p": 0.252,
+          "target": null,
+          "hit": false,
+          "ms": 97
+        },
+        "v1": {
+          "op": "CLICK",
+          "p": 0.674,
+          "target": "Desktop & Dock",
+          "hit": false,
+          "ms": 180
+        },
+        "native": {
+          "op": "CLICK",
+          "p": 0.857,
+          "target": "Displays",
+          "hit": true,
+          "ms": 63
+        }
+      },
+      {
+        "id": "syn-settings-search",
+        "v3": {
+          "op": "WAIT",
+          "p": 0.109,
+          "target": null,
+          "hit": false,
+          "ms": 101
+        },
+        "v1": {
+          "op": "CLICK",
+          "p": 0.813,
+          "target": "Appearance",
+          "hit": false,
+          "ms": 181
+        },
+        "native": {
+          "op": "CLICK",
+          "p": 0.714,
+          "target": "Appearance",
+          "hit": false,
+          "ms": 62
+        }
+      },
+      {
+        "id": "syn-form-name",
+        "v3": {
+          "op": "BLOCKED",
+          "p": 0.086,
+          "target": null,
+          "hit": false,
+          "ms": 98
+        },
+        "v1": {
+          "op": "CLICK",
+          "p": 0.453,
+          "target": "Next",
+          "hit": false,
+          "ms": 151
+        },
+        "native": {
+          "op": "CLICK",
+          "p": 0.647,
+          "target": "Next",
+          "hit": false,
+          "ms": 49
+        }
+      },
+      {
+        "id": "syn-form-dob",
+        "v3": {
+          "op": "BLOCKED",
+          "p": 0.076,
+          "target": null,
+          "hit": false,
+          "ms": 99
+        },
+        "v1": {
+          "op": "CLICK",
+          "p": 0.411,
+          "target": "Next",
+          "hit": false,
+          "ms": 149
+        },
+        "native": {
+          "op": "CLICK",
+          "p": 0.498,
+          "target": "Next",
+          "hit": false,
+          "ms": 56
+        }
+      }
+    ]
+  },
+  "laya-typed-decisions": {
+    "contender": "laya-typed-decisions",
+    "summary": {
+      "v3": {
+        "hits": 0,
+        "cases": 12,
+        "accuracy": 0.0
+      },
+      "v1": {
+        "hits": 1,
+        "cases": 12,
+        "accuracy": 0.083
+      },
+      "native": {
+        "hits": 5,
+        "cases": 12,
+        "accuracy": 0.417
+      }
+    },
+    "rows": [
+      {
+        "id": "calc-en-7",
+        "v3": {
+          "op": "DONE",
+          "p": 0.105,
+          "target": null,
+          "hit": false,
+          "ms": 1095
+        },
+        "v1": {
+          "op": "CLICK",
+          "p": 0.094,
+          "target": "模式",
+          "hit": false,
+          "ms": 1146
+        },
+        "native": {
+          "op": "CLICK",
+          "p": 0.309,
+          "target": "模式",
+          "hit": false,
+          "ms": 410
+        }
+      },
+      {
+        "id": "calc-en-equals",
+        "v3": {
+          "op": "DONE",
+          "p": 0.132,
+          "target": null,
+          "hit": false,
+          "ms": 364
+        },
+        "v1": {
+          "op": "CLICK",
+          "p": 0.079,
+          "target": "模式",
+          "hit": false,
+          "ms": 1179
+        },
+        "native": {
+          "op": "CLICK",
+          "p": 0.178,
+          "target": "模式",
+          "hit": false,
+          "ms": 403
+        }
+      },
+      {
+        "id": "calc-en-clear",
+        "v3": {
+          "op": "DONE",
+          "p": 0.129,
+          "target": null,
+          "hit": false,
+          "ms": 373
+        },
+        "v1": {
+          "op": "CLICK",
+          "p": 0.067,
+          "target": "模式",
+          "hit": false,
+          "ms": 1191
+        },
+        "native": {
+          "op": "CLICK",
+          "p": 0.173,
+          "target": "全部清除",
+          "hit": true,
+          "ms": 416
+        }
+      },
+      {
+        "id": "calc-en-sidebar",
+        "v3": {
+          "op": "DONE",
+          "p": 0.106,
+          "target": null,
+          "hit": false,
+          "ms": 368
+        },
+        "v1": {
+          "op": "CLICK",
+          "p": 0.061,
+          "target": "模式",
+          "hit": false,
+          "ms": 1195
+        },
+        "native": {
+          "op": "CLICK",
+          "p": 0.198,
+          "target": "显示边栏",
+          "hit": true,
+          "ms": 415
+        }
+      },
+      {
+        "id": "calc-zh-7",
+        "v3": {
+          "op": "DONE",
+          "p": 0.177,
+          "target": null,
+          "hit": false,
+          "ms": 373
+        },
+        "v1": {
+          "op": "CLICK",
+          "p": 0.071,
+          "target": "模式",
+          "hit": false,
+          "ms": 1197
+        },
+        "native": {
+          "op": "CLICK",
+          "p": 0.266,
+          "target": "模式",
+          "hit": false,
+          "ms": 435
+        }
+      },
+      {
+        "id": "calc-zh-equals",
+        "v3": {
+          "op": "DONE",
+          "p": 0.136,
+          "target": null,
+          "hit": false,
+          "ms": 375
+        },
+        "v1": {
+          "op": "CLICK",
+          "p": 0.059,
+          "target": "模式",
+          "hit": false,
+          "ms": 1208
+        },
+        "native": {
+          "op": "CLICK",
+          "p": 0.116,
+          "target": "等于",
+          "hit": true,
+          "ms": 440
+        }
+      },
+      {
+        "id": "calc-zh-clear",
+        "v3": {
+          "op": "DONE",
+          "p": 0.177,
+          "target": null,
+          "hit": false,
+          "ms": 378
+        },
+        "v1": {
+          "op": "CLICK",
+          "p": 0.074,
+          "target": "模式",
+          "hit": false,
+          "ms": 1191
+        },
+        "native": {
+          "op": "DONE",
+          "p": 0.111,
+          "target": null,
+          "hit": false,
+          "ms": 433
+        }
+      },
+      {
+        "id": "calc-zh-sidebar",
+        "v3": {
+          "op": "DONE",
+          "p": 0.204,
+          "target": null,
+          "hit": false,
+          "ms": 373
+        },
+        "v1": {
+          "op": "CLICK",
+          "p": 0.078,
+          "target": "模式",
+          "hit": false,
+          "ms": 1198
+        },
+        "native": {
+          "op": "CLICK",
+          "p": 0.112,
+          "target": "模式",
+          "hit": false,
+          "ms": 439
+        }
+      },
+      {
+        "id": "syn-settings-displays",
+        "v3": {
+          "op": "DONE",
+          "p": 0.089,
+          "target": null,
+          "hit": false,
+          "ms": 277
+        },
+        "v1": {
+          "op": "CLICK",
+          "p": 0.151,
+          "target": "Appearance",
+          "hit": false,
+          "ms": 487
+        },
+        "native": {
+          "op": "CLICK",
+          "p": 0.267,
+          "target": "Displays",
+          "hit": true,
+          "ms": 485
+        }
+      },
+      {
+        "id": "syn-settings-search",
+        "v3": {
+          "op": "DONE",
+          "p": 0.131,
+          "target": null,
+          "hit": false,
+          "ms": 243
+        },
+        "v1": {
+          "op": "CLICK",
+          "p": 0.159,
+          "target": "Appearance",
+          "hit": false,
+          "ms": 486
+        },
+        "native": {
+          "op": "CLICK",
+          "p": 0.161,
+          "target": "Control Center",
+          "hit": false,
+          "ms": 175
+        }
+      },
+      {
+        "id": "syn-form-name",
+        "v3": {
+          "op": "DONE",
+          "p": 0.109,
+          "target": null,
+          "hit": false,
+          "ms": 281
+        },
+        "v1": {
+          "op": "TYPE_TEXT",
+          "p": 0.189,
+          "target": "Full name",
+          "hit": true,
+          "ms": 436
+        },
+        "native": {
+          "op": "TYPE_TEXT",
+          "p": 0.108,
+          "target": "Full name",
+          "hit": true,
+          "ms": 145
+        }
+      },
+      {
+        "id": "syn-form-dob",
+        "v3": {
+          "op": "DONE",
+          "p": 0.106,
+          "target": null,
+          "hit": false,
+          "ms": 274
+        },
+        "v1": {
+          "op": "TYPE_TEXT",
+          "p": 0.127,
+          "target": "Full name",
+          "hit": false,
+          "ms": 427
+        },
+        "native": {
+          "op": "DONE",
+          "p": 0.121,
+          "target": null,
+          "hit": false,
+          "ms": 183
+        }
+      }
+    ]
+  }
+}

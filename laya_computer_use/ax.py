@@ -75,6 +75,11 @@ CLICKABLE_ROLES = frozenset({
 
 # Subtrees that are OS chrome rather than the app's content. The menu bar alone was
 # 121/147 elements on Calculator, and it is identical in every app.
+#
+# For the *window* scope this is noise. For the *desktop* scope it is capability: a
+# menu item can be invoked by path at the OS level (`invoke_menu`), so the same 121
+# elements become real, addressable actions — see `ax_to_observation(menu_items=True)`
+# and `desktop.py`. The filter stays the default; opting in is explicit.
 CHROME_SUBTREES = frozenset({"AXMenuBar", "AXMenu"})
 
 # Elements whose AX label is a framework internal, not a human-visible name.
@@ -132,6 +137,11 @@ class AXObserver:
     # 120 elements ≈ 1.2 s with degrading accuracy; prefer ranking over raising this.
     max_elements: int = 40
     include_chrome: bool = False
+    # Desktop scope: offer the app menu bar as invocable actions (`invoke_menu` by
+    # path) instead of filtering it as chrome. Off by default — a web-trained model
+    # faced with 121 menu items loses the window's real controls; on by default only
+    # in the desktop-level observation, where the menu *is* the point.
+    menu_items: bool = False
 
     def _call(self, tool: str, payload: Dict[str, Any]) -> Dict[str, Any]:
         binary = shutil.which(self.driver_bin) or self.driver_bin
@@ -167,11 +177,52 @@ class AXObserver:
             title=str(snapshot.get("window_title", "") or ""),
             include_chrome=self.include_chrome,
             max_elements=self.max_elements,
+            menu_items=self.menu_items,
         )
+        # Stamp the owning pid on menu rows: invoking a menu does not depend on the
+        # driver's current focus, so the pid has to travel with the row.
+        for item in observation.get("actions", []):
+            meta = item.get("meta")
+            if isinstance(meta, dict) and meta.get("desktop_action") == "MENU":
+                meta["pid"] = self.pid
         observation["pid"] = self.pid
         observation["window_id"] = self.window_id
         observation["snapshot_id"] = snapshot.get("snapshot_id", "")
         return observation
+
+
+def menu_path(element: AXElement, by_index: Dict[int, AXElement], *, max_depth: int = 64) -> List[str]:
+    """The app-menu path to one menu item: `["File", "New Folder"]`.
+
+    Walks the parent chain collecting the labelled ancestors (`AXMenuBarItem`,
+    `AXMenuItem`) and skipping the `AXMenu` containers, which carry no label of
+    their own. The result is exactly what `invoke_menu` needs, which is what turns
+    the OS menu bar from chrome into a set of addressable actions.
+
+    Returns an empty list when the element is not inside a menu-bar subtree, so a
+    context-menu item can never be mistaken for an app-menu path.
+    """
+    labels: List[str] = []
+    node: Optional[AXElement] = element
+    seen = 0
+    inside_bar = False
+    while node is not None and seen < max_depth:
+        parent = by_index.get(node.parent_index) if node.parent_index is not None else None
+        if parent is None:
+            break
+        if parent.role == "AXMenuBar":
+            inside_bar = True
+            break
+        if parent.role in ("AXMenuBarItem", "AXMenuItem") and parent.label:
+            labels.append(parent.label)
+        node = parent
+        seen += 1
+    if not inside_bar:
+        return []
+    labels.reverse()
+    if element.label:
+        labels.append(element.label)
+    return labels
 
 
 def ax_to_observation(
@@ -180,6 +231,7 @@ def ax_to_observation(
     title: str = "",
     include_chrome: bool = False,
     max_elements: int = 40,
+    menu_items: bool = False,
 ) -> Dict[str, Any]:
     """Filter and adapt an AX walk into the browser contract's observation shape.
 
@@ -213,6 +265,30 @@ def ax_to_observation(
     items: List[Dict[str, Any]] = []
     for element in elements:
         if element.role in ("AXWindow",):
+            continue
+
+        is_menu_item = element.role == "AXMenuItem"
+        if is_menu_item and menu_items:
+            # Desktop scope: the menu bar is capability, not noise. The path is
+            # resolved here so the executor can invoke the item without a click.
+            path = menu_path(element, by_index)
+            if not path:
+                continue  # a context menu, not an app menu — not invocable by path
+            text = element.label or element.value
+            if not text:
+                continue
+            items.append({
+                "kind": "click",
+                "node": element.token or str(element.element_index),
+                "label": text,
+                "role": "menuitem",
+                "disabled": element.enabled is False,
+                "ax_role": element.role,
+                "meta": {"element_index": element.element_index,
+                         "element_token": element.token,
+                         "desktop_action": "MENU",
+                         "menu": path},
+            })
             continue
         if not include_chrome and in_chrome(element):
             continue
