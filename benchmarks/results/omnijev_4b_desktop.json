@@ -1,0 +1,108 @@
+{
+  "model": "OmniJev-4B",
+  "backend": "screenshot + AX region boxes (3080 CUDA)",
+  "device": "NVIDIA GeForce RTX 3080",
+  "controls_offered": 20,
+  "hits": 9,
+  "cases": 12,
+  "accuracy": 0.75,
+  "median_ms": 142005,
+  "rows": [
+    {
+      "goal": "Goal: press the number 7 button.",
+      "want": "7",
+      "chosen": "7",
+      "hit": true,
+      "confidence": 0.5945,
+      "ms": 532272
+    },
+    {
+      "goal": "Goal: press the number 8 button.",
+      "want": "8",
+      "chosen": "8",
+      "hit": true,
+      "confidence": 0.7443,
+      "ms": 129061
+    },
+    {
+      "goal": "Goal: press the number 9 button.",
+      "want": "9",
+      "chosen": "8",
+      "hit": false,
+      "confidence": 0.7915,
+      "ms": 142005
+    },
+    {
+      "goal": "Goal: press the number 4 button.",
+      "want": "4",
+      "chosen": "4",
+      "hit": true,
+      "confidence": 0.8675,
+      "ms": 225126
+    },
+    {
+      "goal": "Goal: press the number 0 button.",
+      "want": "0",
+      "chosen": "+/-",
+      "hit": false,
+      "confidence": 0.7898,
+      "ms": 28560
+    },
+    {
+      "goal": "Goal: press the equals button.",
+      "want": "=",
+      "chosen": "=",
+      "hit": true,
+      "confidence": 0.9378,
+      "ms": 221044
+    },
+    {
+      "goal": "Goal: press the plus button.",
+      "want": "+",
+      "chosen": "+",
+      "hit": true,
+      "confidence": 0.8406,
+      "ms": 121224
+    },
+    {
+      "goal": "Goal: press the minus button.",
+      "want": "-",
+      "chosen": "-",
+      "hit": true,
+      "confidence": 0.5824,
+      "ms": 24453
+    },
+    {
+      "goal": "Goal: press the multiply button.",
+      "want": "*",
+      "chosen": "*",
+      "hit": true,
+      "confidence": 0.702,
+      "ms": 319206
+    },
+    {
+      "goal": "Goal: press the divide button.",
+      "want": "/",
+      "chosen": "/",
+      "hit": true,
+      "confidence": 0.6091,
+      "ms": 21672
+    },
+    {
+      "goal": "Goal: clear the display (the all-clear button).",
+      "want": "AC",
+      "chosen": "Backspace",
+      "hit": false,
+      "confidence": 0.9937,
+      "ms": 226030
+    },
+    {
+      "goal": "Goal: delete the last digit (the backspace button).",
+      "want": "Backspace",
+      "chosen": "Backspace",
+      "hit": true,
+      "confidence": 0.9987,
+      "ms": 118214
+    }
+  ]
+}

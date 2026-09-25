@@ -108,6 +108,27 @@ synthetic panels: operation (`CLICK`/`TYPE_TEXT`) + which element index.
 consistent: `laya-en` answers `DONE`, `laya-multilingual` answers `WAIT` — regardless of
 the goal, the labels, or which options were offered.
 
+### Against an open-weights vision-model family (OmniJev)
+
+The same 12 goals were offered to the [OmniJev](https://huggingface.co/tinnel123)
+checkpoints (Qwen3.5-VL fine-tunes that read a screenshot and pick a region — the
+vision-model route this project deliberately avoids), using their native interface:
+the real Calculator screenshot plus AX-derived region boxes. Higher is expected here —
+a vision model sees the button; the point is to measure the gap honestly:
+
+| Model | Interface | Region pointing | Median latency |
+|---|---|---|---|
+| OmniJev-0.8B | screenshot + regions | 1/12 (8%) | ~13 s |
+| OmniJev-2B | screenshot + regions | 4/12 (33%) | ~180 s |
+| OmniJev-4B | screenshot + regions | **9/12 (75%)** | ~142 s |
+| laya official (best) | AX table, $0 | 0/12 | ~0.2 s |
+
+The scaling is real (8% → 33% → 75%) and the 4B is a genuinely competent pointer, but
+each decision costs 140+ seconds on an RTX 3080 — about 600× the decision latency of
+the AX route, before any screenshot capture or vision encoder cost. The gap this repo
+documents is not that vision models can't point — it's that the official Laya decision
+checkpoints cannot read an element table at all.
+
 ### Four fairness controls — it is not an artifact of how we ask
 
 A zero like this deserves suspicion, so each plausible explanation was tested:
