@@ -93,7 +93,11 @@ def main() -> None:
     print(f"window crop {box} -> {cropped.size}")
 
     # Controls: labelled AX elements with frames, in region coordinates (0-1000
-    # relative to the CROPPED image, which is what the model sees).
+    # relative to the CROPPED image, which is what the model sees). The canonical
+    # name is the localized label run through the same alias table the on-Mac
+    # battery uses, so the English goals match regardless of this Mac's UI language.
+    from benchmarks.omnijev_desktop import LABEL_ALIASES
+
     x0, y0, x1, y1 = box
     width, height = x1 - x0, y1 - y0
     controls = []
@@ -102,13 +106,16 @@ def main() -> None:
         label = str(element.get("label") or "").strip()
         if not label or not frame or frame.get("w", 0) <= 0 or frame.get("h", 0) <= 0:
             continue
+        canonical = LABEL_ALIASES.get(label)
+        if canonical is None:
+            continue  # not a goal-addressable control; skip rather than confuse
         cx1 = max(0, round((frame["x"] - x0) / width * 1000))
         cy1 = max(0, round((frame["y"] - y0) / height * 1000))
         cx2 = min(1000, round((frame["x"] + frame["w"] - x0) / width * 1000))
         cy2 = min(1000, round((frame["y"] + frame["h"] - y0) / height * 1000))
         if cx2 <= cx1 or cy2 <= cy1:
             continue
-        controls.append({"label": label, "canonical": label,
+        controls.append({"label": label, "canonical": canonical,
                          "region": {"box": [cx1, cy1, cx2, cy2]}})
     print(f"controls: {len(controls)}")
     for c in controls[:10]:

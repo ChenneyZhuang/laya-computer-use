@@ -65,12 +65,13 @@ GOALS: list[tuple[str, str]] = [
 
 # The macOS Calculator's AX labels are localized; map them to the English names the
 # goals use, so the battery can be written in one language regardless of this Mac's UI.
+# `清除` (this Mac's basic-mode label) and `全部清除` (the classic label) both map to AC.
 LABEL_ALIASES = {
     "7": "7", "8": "8", "9": "9", "4": "4", "5": "5", "6": "6",
     "1": "1", "2": "2", "3": "3", "0": "0", "点": ".",
     "等于": "=", "加": "+", "减": "-", "乘": "*", "除": "/",
-    "全部清除": "AC", "删除": "Backspace", "百分比": "Percent", "更改正负号": "+/-",
-    "左括号": "(", "右括号": ")",
+    "清除": "AC", "全部清除": "AC", "删除": "Backspace", "百分比": "Percent",
+    "更改正负号": "+/-",
 }
 
 # Labels that are NOT one of the goals are still offered — they are real buttons,
